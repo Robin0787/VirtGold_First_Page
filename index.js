@@ -164,10 +164,17 @@ for (let i = 0; i < arrows.length; i++) {
 }
 
 // Featured boxes Slider and Image changes Functionality
+
+// const featuredImages = [
+//   "https://i.ibb.co/q13ysfy/Rectangle-11.png",
+//   "https://i.ibb.co/CJTZvsd/featured-iamge-2.webp",
+//   "https://i.ibb.co/q13ysfy/Rectangle-11.png",
+// ];
+
 const featuredImages = [
-  "https://i.ibb.co/q13ysfy/Rectangle-11.png",
-  "https://i.ibb.co/CJTZvsd/featured-iamge-2.webp",
-  "https://i.ibb.co/q13ysfy/Rectangle-11.png",
+  "./Rectangle-11.png",
+  "./featured-iamge-2.webp",
+  "./Rectangle-11.png",
 ];
 
 const featuredImageElement = document.getElementById("featured-image");
@@ -204,6 +211,7 @@ function activeFeatureBox(featureBox, elementIndex) {
   const innerBox = featureBox.querySelector("#feature-inner-box");
   innerBox.classList.remove("feature-box-border");
   innerBox.classList.add("feature-box-loader");
+  featureBox.querySelector('.description').classList.remove('hidden');
 }
 
 function clearClasses() {
@@ -213,5 +221,6 @@ function clearClasses() {
     const innerBox = box.querySelector("#feature-inner-box");
     innerBox.classList.remove("feature-box-loader");
     innerBox.classList.add("feature-box-border");
+    box.querySelector('.description').classList.add('hidden');
   });
 }
