@@ -165,11 +165,6 @@ for (let i = 0; i < arrows.length; i++) {
 
 // Featured boxes Slider and Image changes Functionality
 
-// const featuredImages = [
-//   "https://i.ibb.co/q13ysfy/Rectangle-11.png",
-//   "https://i.ibb.co/CJTZvsd/featured-iamge-2.webp",
-//   "https://i.ibb.co/q13ysfy/Rectangle-11.png",
-// ];
 
 const featuredImages = [
   "./Rectangle-11.png",
